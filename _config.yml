@@ -1,6 +1,6 @@
 # Site settings
 title: Lux Marketing
-email: your-email@domain.com
+email: info@luxmarketing.mx
 description: Ideas que iluminan
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://luxmarketing.mx" # the base hostname & protocol for your site
