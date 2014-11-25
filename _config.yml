@@ -2,7 +2,7 @@
 title: Lux Marketing
 email: info@luxmarketing.mx
 description: Ideas que iluminan
-baseurl: "/lux" # the subpath of your site, e.g. /blog/ cambiar a blanco
+baseurl: "" # the subpath of your site, e.g. /blog/ cambiar a blanco
 url: "http://luxmarketing.mx" # the base hostname & protocol for your site
 twitter_username: jekyllrb
 github_username:  jekyll

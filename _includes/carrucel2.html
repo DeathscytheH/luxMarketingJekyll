@@ -10,8 +10,8 @@
                 $SlideEasing: $JssorEasing$.$EaseLinear,          //[Optional] Specifies easing for right to left animation, default value is $JssorEasing$.$EaseOutQuad
                 $SlideDuration: 1600,                                //[Optional] Specifies default duration (swipe) for slide in milliseconds, default value is 500
                 $MinDragOffsetToSlide: 20,                          //[Optional] Minimum drag offset to trigger slide , default value is 20
-                $SlideWidth: 100,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container
-                //$SlideHeight: 100,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
+                $SlideWidth: 70,                                   //[Optional] Width of every slide in pixels, default value is width of 'slides' container Aqui se cambia el ancho de las diapositivas.
+                $SlideHeight: 55,                                //[Optional] Height of every slide in pixels, default value is height of 'slides' container
                 $SlideSpacing: 30, 					                //[Optional] Space between each slide in pixels, default value is 0
                 $DisplayPieces: 7,                                  //[Optional] Number of pieces to display (the slideshow would be disabled if the value is set to greater than 1), the default value is 1
                 $ParkingPosition: 0,                              //[Optional] The offset position to park slide (this options applys only when slideshow disabled), default value is 0.
@@ -41,20 +41,10 @@
     </script>
     <!-- Jssor Slider Begin -->
     <!-- You can move inline styles to css file or css block. -->
-    <div id="slider1_container" class="row" style="position: relative; top: 0px; left: 0px; width: 980px; height: 100px; overflow: hidden; ">
+    <div id="slider1_container" class="row" style="position: relative; top: 0px; left: 200px; width: 980px; height: 100px; overflow: hidden; ">
 
-        <!-- Loading Screen -->
-        <div u="loading" style="position: absolute; top: 0px; left: 0px;">
-            <div style="filter: alpha(opacity=70); opacity:0.7; position: absolute; display: block;
-                background-color: #000; top: 0px; left: 0px; width: 100%; height:100%;">
-            </div>
-            <div style="position: absolute; display: block; background: url(../img/loading.gif) no-repeat center center;
-                top: 0px; left: 0px;width: 100%;height:100%;">
-            </div>
-        </div>
-
-        <!-- Slides Container -->
-        <div u="slides" class="row" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 50px; overflow: hidden;">
+        <!-- Slides Container en height se cambia la altura de las diapositivas -->
+        <div u="slides" class="row" style="cursor: move; position: absolute; left: 0px; top: 0px; width: 980px; height: 100px; overflow: hidden;">
             <div><img class="img-responsive" u="image" alt="amazon" src="{{ "img/1bm.png" | prepend: site.baseurl }}"/></div>
             <div><img class="img-responsive" u="image" alt="amazon" src="{{ "img/2cm.png" | prepend: site.baseurl }}"/></div>
             <div><img class="img-responsive" u="image" alt="amazon" src="{{ "img/3mb.png" | prepend: site.baseurl }}"/></div>
@@ -70,6 +60,5 @@
             <div><img class="img-responsive" u="image" alt="amazon" src="{{ "img/6se.png" | prepend: site.baseurl }}"/></div>
             <div><img class="img-responsive" u="image" alt="amazon" src="{{ "img/7tm.png" | prepend: site.baseurl }}"/></div>          
         </div>
-        <a style="display: none" href="http://www.jssor.com">javascript</a>
     </div>
     <!-- Jssor Slider End -->

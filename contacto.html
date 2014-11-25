@@ -24,16 +24,19 @@ permalink: /contacto/
                     <br>
                     <input type="text" class="form-control" id="message" placeholder="Comentarios" required data-validation-required-message="Por favor, ingresa algun comentario.">
                     <br>
+                <center>
+                    <input type="image" src="{{ "/img/enviar.png" | prepend: site.baseurl }}" name="submit" alt="Submit">
+                </center>                    
                     <br>
+                    <center>
+                        <div id="success"></div>
+                    </center>
                     <br>
                     <br>
                     <br>
                     <br>
                 </div>
-                <center>
-                    <div id="success"></div>
-                    <input type="image" src="{{ "/img/enviar.png" | prepend: site.baseurl }}" name="submit" alt="Submit">
-                </center>
+
             </form>    
         </div>
         <br>
