@@ -12,29 +12,29 @@ layout: default
     <div class="col-lg-12">
       <br>
       <br>
-      <center><img src="img/ventajas.png" class="img-responsive logo pull-left" alt="logo lux marketing"></center>
+      <center><img src="{{ "/img/ventajas.png" | prepend: site.baseurl }}" class="img-responsive logo" alt="logo lux marketing"></center>
     </div>
   </div>
   
   <!-- Example row of columns -->
   <div class="row patrocinios"><br><br>
       <div class="col-lg-4">
-          <img src="img/loquierohacer.png" alt="" class="img-responsive"><br>
+          <img src="{{ "/img/loquierohacer.png" | prepend: site.baseurl }}" alt="" class="img-responsive"><br>
       <p>Luxmarketing hace que aprender a manejar su campaña de medios sociales sea más fácil que nunca. Con nuestros cursos           completos en línea y nuestro galardonado software de medios sociales va a ser un profesional de medios sociales ¡En               poco tiempo!</p>
       </div>
       <div class="col-lg-4">
-          <img src="img/ayuda.png" alt="" class="img-responsive"><br>
+          <img src="{{ "/img/ayuda.png" | prepend: site.baseurl }}" alt="" class="img-responsive"><br>
         <p>Nuestros entrenadores expertos en medios sociales trabajarán con usted uno a uno para desarrollar e implementar su             estrategia de medios sociales. 
         Trabajar con usted para hacer crecer su negocio 
         en línea.</p>
      </div>
       <div class="col-lg-4">
-           <img src="img/quieroquelohagan.png" alt="" class="img-responsive"><br>
+           <img src="{{ "/img/quieroquelohagan.png" | prepend: site.baseurl }}" alt="" class="img-responsive"><br>
         <p>Deje que Luxmarketing se haga cargo de crecer y gestionar todas sus comunidades de medios sociales en su nombre.               Dejándole más tiempo para centrarse en su negocio.</p>
       </div>
   </div>  <br>
 
 <!-- Carousel de clientes -->
-    {% include carrucel2.html %}
+{% include carrucel2.html %}
 
 </div> <!-- /container -->

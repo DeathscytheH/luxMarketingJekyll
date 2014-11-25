@@ -11,18 +11,18 @@ permalink: /contacto/
     </center>      
 </div>
 
-<div class=" jumbotron col-lg-12" style="margin-top:-30px; background-image:url({{ "/img/contacto-body.png" | prepend: site.baseurl }}); background-color: transparent; background-repeat: no-repeat;">
+<div class=" jumbotron col-lg-12" style="margin-top:-30px; padding-right:170px; background-image:url({{ "/img/contacto-body.png" | prepend: site.baseurl }}); background-color: transparent; background-repeat: no-repeat;">
     <center>
         <div class="ipad">
-            <form role="form" class="formulario">
+            <form name="sentMessage" id="contactForm" novalidate class="formulario">
                 <div class="form-group">
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Tu Nombre">
+                    <input type="text" class="form-control" id="name" placeholder="Nombre" required data-validation-required-message="Por favor, ingresa tu Nombre.">
                     <br>
-                    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Telefono">
+                    <input type="email" class="form-control" id="phone" placeholder="Telefono" required data-validation-required-message="Por favor, ingresa tu Telefono.">
                     <br>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Correo">
+                    <input type="text" class="form-control" id="email" placeholder="Correo" required data-validation-required-message="Por favor, ingresa tu Email.">
                     <br>
-                    <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Comentarios">
+                    <input type="text" class="form-control" id="message" placeholder="Comentarios" required data-validation-required-message="Por favor, ingresa algun comentario.">
                     <br>
                     <br>
                     <br>
@@ -30,7 +30,10 @@ permalink: /contacto/
                     <br>
                     <br>
                 </div>
-                <center><img src="{{ "/img/enviar.png" | prepend: site.baseurl }}" alt="enviar"></center>
+                <center>
+                    <div id="success"></div>
+                    <input type="image" src="{{ "/img/enviar.png" | prepend: site.baseurl }}" name="submit" alt="Submit">
+                </center>
             </form>    
         </div>
         <br>

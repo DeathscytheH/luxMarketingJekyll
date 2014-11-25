@@ -110,11 +110,19 @@ ul li a{color:#ffffff;  background-color: transparent;}
       padding:0px;
       margin: 0px;
       margin-top: -130px;
-      margin-left: 700px;}
+      margin-left: 700px;
+}
 
 .formulario{height: 590px;
             width: 300px;
             padding-top: 80px;
             margin-left: -110px;}
+
 .contacto-header{margin-left: 180px;}
+
 .contacto-regresar{margin-top: -600px; margin-left: -300px; }
+
+#formElement
+{
+    position:absolute;
+}

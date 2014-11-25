@@ -25,14 +25,14 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- Contact Form JavaScript -->
+<script src="{{ "js/jqBootstrapValidation.js" | prepend: site.baseurl }}"></script>
+<script src="{{ "js/contact_me.js" | prepend: site.baseurl }}"></script>   
     
     <!-- use jssor.slider.min.js instead for release -->
     <!-- jssor.slider.min.js = (jssor.js + jssor.slider.js) -->
-    {% comment %}
-    <script src="{{"/js/jssor.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    <script src="{{"/js/jssor.slider.js" | prepend: site.baseurl }}" type="text/javascript"></script>
-    {% endcomment %}
-    <script src="{{"/js/jssor.slider.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+    <script src="{{"js/jssor.slider.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
     
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
